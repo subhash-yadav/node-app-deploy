@@ -167,7 +167,7 @@ server.use(cors())
 main().catch(err => console.log(err));
 async function main() {
   await mongoose.connect(process.env.MONGO_URL);
-  console.log('DataBase Connected')
+  // console.log('DataBase Connected')
 }
 server.use('/products',productRouter.routers)
 server.use('/users',userRouters.routes)
@@ -176,7 +176,7 @@ server.use("*",(req,res)=>{
 })
 
 server.listen(process.env.PORT,()=>{
-    console.log("Server Started")
+    // console.log("Server Started")
 })
 
 //MVC model view Controller
