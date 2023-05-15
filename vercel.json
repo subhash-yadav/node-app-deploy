@@ -29,7 +29,7 @@
       {
         "src": "/(.+)",
         "dest": "build/$1"
-      }
+      },
       {
         "src": "/add-product",
         "dest": "build/index.html"
