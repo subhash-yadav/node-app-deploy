@@ -156,10 +156,10 @@ const express = require('express');
 const productRouter = require('./routes/product')
 const userRouters = require('./routes/users')
 const cors = require('cors');
-const morgan = require('morgan');
+// const morgan = require('morgan');
 const server = express();
 server.use(express.json())
-server.use(morgan("default"));
+// server.use(morgan("default"));
 server.use(express.static(path.resolve(__dirname,process.env.PUBLIC_DIR)))
 server.use(cors())
 //db collections
